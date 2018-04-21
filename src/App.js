@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import adyax from './images/adyax.png'
 import better from './images/better-exp.png'
 import footer from './images/footer.png'
+import picture from './images/picture.png'
 
 const Title = styled.div`
 	width: 636px;
@@ -74,6 +75,55 @@ const Sum = styled.div`
   padding-top: 45px;
 `;
 
+const H1 = styled.h1`
+	width: 351px;
+  height: 52px;
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.6;
+  letter-spacing: normal;
+  margin: 0;
+  text-align: left;
+  color: #191919;
+`;
+
+const P = styled.p`
+	width: 350px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  margin: 8px 0 0 0;
+  color: #7d7d7d;
+`;
+
+const Select = styled.select`
+	width: 242px;
+  height: 51px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border: solid 1px #dcdcdc;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  margin-top: 30px;
+  background-color: #fff;
+  overflow: hidden;
+  background: #fafafa url("./src/images/picture.png") no-repeat 90% 50%;
+  
+  & < :focus {
+    outline: none;
+	}
+`;
+
 class App extends React.Component {
 	render() {
 		return(
@@ -91,13 +141,29 @@ class App extends React.Component {
 					<div className="col-md-12" style={{background: '#fedd23', height: '880px'}}>
 						<div className='container' style={{position: 'relative'}}>
 							<div style={{position: 'absolute', top: '-147px', right: 0, padding: '47px 65px 47px 52px', width: '1097px', height: '951px', backgroundColor: '#ffffff', boxShadow: '0 25px 54px 0 rgba(0, 0, 0, 0.11)'}}>
-								<div style={{height: '257px', width: '100%', borderBottom: '1px solid #ebebeb'}}>
+								<div style={{height: '257px', width: '100%', padding: '33px 22px', borderBottom: '1px solid #ebebeb'}}>
+
+										<div style={{width: '131px', height: '131px', verticalAlign: 'top', display: 'inline-block'}}>
+											<img src={picture} alt="better" style={{width: '100%', height: '100%', display: 'block'}}/>
+										</div>
+										<div style={{width: '500px', padding: '0 20px', borderRight: '1px solid rgba(43, 46, 64, 0.06)', height: '191px', display: 'inline-block',verticalAlign: 'top'}}>
+											<H1>Title Lorem ipsum dolor sit</H1>
+											<P>
+												Lorem ipsum dolor sit amet, quis dictum mauris erat aliquam, ac in pede pharetra quis non et.
+											</P>
+											<Select picture={picture}>
+												<option value="sku">SKU</option>
+											</Select>
+										</div>
+										<div style={{width: '305px', height: '191px', display: 'inline-block'}}>
+
+										</div>
 
 								</div>
-								<div style={{height: '257px', width: '100%', borderBottom: '1px solid #ebebeb'}}>
+								<div style={{height: '257px', width: '100%', padding: '33px 22px',borderBottom: '1px solid #ebebeb'}}>
 
 								</div>
-								<div style={{height: '257px', width: '100%', borderBottom: '1px solid #ebebeb'}}>
+								<div style={{height: '257px', width: '100%', padding: '33px 22px',borderBottom: '1px solid #ebebeb'}}>
 
 								</div>
 								<Sum>
